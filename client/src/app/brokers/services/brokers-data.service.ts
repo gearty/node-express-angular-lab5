@@ -5,7 +5,7 @@ import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 
 @Injectable()
 export class BrokersDataService {
-  private readonly API_URL = 'http://' + window.location.hostname + ':3000/brokers/';
+  private readonly API_URL = 'http://' + window.location.hostname + '/api/brokers/';
 
   dataChange: BehaviorSubject<Broker[]> = new BehaviorSubject<Broker[]>([]);
   // Temporarily stores data from dialogs
